@@ -126,18 +126,16 @@ class MainActivity : AppCompatActivity() {
             contentResolver,
             bitmap,
             "Image_${System.currentTimeMillis()}",
-            "Image saved from ICTE3 app"
+            "Image from ICTE3 app"
         )
 
         if (savedImageURI != null) {
             // Image saved successfully, show a toast message
-            Toast.makeText(this, "Image saved to gallery", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Image Successfully Saved to Gallery", Toast.LENGTH_SHORT).show()
         } else {
             // Failed to save image, show an error toast message
-            Toast.makeText(this, "Failed to save image", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Failed to Save Image", Toast.LENGTH_SHORT).show()
         }
-
-//        Toast.makeText(this, "Image saved to gallery", Toast.LENGTH_SHORT).show()
     }
 
     companion object {
